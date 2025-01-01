@@ -35,3 +35,7 @@ Config.in
 core
 .gdb_history
 .gdbinit
+
+# ignores after building on mac arm64
+built-in.c
+!.github/

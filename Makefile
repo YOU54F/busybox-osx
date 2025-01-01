@@ -289,7 +289,7 @@ MAKEFLAGS += -rR
 # Make variables (CC, etc...)
 
 AS		= $(CROSS_COMPILE)as
-CC		= $(CROSS_COMPILE)gcc 
+CC		= $(CROSS_COMPILE)gcc -Wno-implicit-function-declaration -Wno-int-conversion
 LD		= $(CROSS_COMPILE)gcc -nostdlib
 CPP		= $(CC) -E
 AR		= $(CROSS_COMPILE)ar
